@@ -1,0 +1,108 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // left: 0;
+    // right: 0;
+    z-index: 9999;
+    .burger {
+        display: none;
+    }
+
+    &__logo {
+        max-width: 79px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 65px;
+    }
+
+    &-contacts__wrap {
+        display: flex;
+        column-gap: 35px;
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        &__list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            column-gap: 18px;
+            margin-right: 70px;
+            list-style: none;
+        }
+        &__item {
+            a {
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                color: #3E3E3E;
+            }
+        }
+    }
+
+    &-contact {
+        display: flex;
+        column-gap: 34px;
+        margin-right: 70px;
+        &__item {
+            display: flex;
+            column-gap: 8px;
+            align-items: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+
+    &-btns {
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+        &__social {
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            column-gap: 14px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }    
+
+   
+    &__btn {
+        padding-left: 36px;
+        padding-right: 13px;
+        background-image: url('../icons/Calling.svg');
+        background-position: 15px center;
+        background-repeat: no-repeat;
+        &:hover {
+            background-image: url('../icons/Calling-Light-Outline.svg');
+            background-position: 15px center;
+            background-repeat: no-repeat;
+        }
+        &:focus {
+            background-image: url('../icons/Calling.svg');
+            background-position: 15px center;
+            background-repeat: no-repeat;
+        }
+    }
+}

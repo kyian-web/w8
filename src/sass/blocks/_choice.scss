@@ -1,0 +1,192 @@
+.choice {
+    background: #F0F3F8;
+    padding: 93px 0 45px;
+    &__descr {
+        margin-top: 14px;
+    }
+
+    &-form {
+        margin-top: 31px;
+        &__wrapper {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            padding: 62px 60px 67px;
+            display: grid;
+            align-items: center;
+            column-gap: 48px;
+            grid-template-columns: 415px auto;
+            grid-template-areas: 'fuel body' 'budget body';
+        }
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: $main-color;
+        }
+
+        &__fuel {
+            grid-area: fuel;
+            &-wrapper {
+                margin-top: 17px;
+                width: 270px;
+                display: grid;
+                row-gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                label {
+                    position: relative;
+                    padding-left: 35px;
+        
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $main-color;
+                    cursor: pointer;
+                }
+                .radio {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    clip: rect(0 0 0 0);
+                    &:checked + .radio-style {
+                        &::before {
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background-color: $second-color;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                .radio-style {
+                    // display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 100%;
+                    background: rgba(227, 0, 79, 0.24);
+                    border: 1px solid #E3004F;
+                }
+            }
+        }
+        &__budget {
+            grid-area: budget;
+            margin-top: 53px;
+            &-wrapper {
+                margin-top: 17px;
+                width: 420px;
+                display: grid;
+                row-gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                label {
+                    position: relative;
+                    padding-left: 35px;
+        
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $main-color;
+                    cursor: pointer;
+                }
+                .radio {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    clip: rect(0 0 0 0);
+                    &:checked + .radio-style {
+                        &::before {
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background-color: $second-color;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                .radio-style {
+                    position: absolute;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 100%;
+                    background: rgba(227, 0, 79, 0.24);
+                    border: 1px solid #E3004F;
+                }
+            }
+        }
+        &__body {
+            grid-area: body;
+            display: grid;
+            row-gap: 40px;
+            justify-content: space-between;
+            grid-template-columns: repeat(4, 205px);
+            
+            &-img {
+                position: relative;
+                display: block;
+                height: 103px;
+                opacity: .5;
+                text-align: center;
+                transition: all .3s;
+                cursor: pointer;
+
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 21px;
+                color: $main-color;
+                >.check {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    right: 28px;
+                    transition: all .3s;
+                }
+                >img {
+                    display: block;
+                    margin: 0 auto 10px;
+                }
+                &:hover {
+                    opacity: 1;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        &__btn {
+            opacity: .5;
+            display: block;
+            margin: 42px auto 0;
+
+            padding-left: 36px;
+            padding-right: 13px;
+            background-image: url('../icons/Wallet.svg');
+            background-position: 15px center;
+            background-repeat: no-repeat;
+            width: 189px;
+            &:hover {
+                background-image: url('../icons/Wallet-dark.svg');
+                background-position: 15px center;
+                background-repeat: no-repeat;
+            }
+            &:focus {
+                background-image: url('../icons/Wallet.svg');
+                background-position: 15px center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

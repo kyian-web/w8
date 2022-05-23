@@ -1,0 +1,212 @@
+.popup__consultation, .popup__price, .popup__choice {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup__dialog {
+    padding: 60px 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 435px;
+    min-height: 451px;
+    background: #F0F3F8;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+}
+
+.popup__close {
+    position: absolute;
+    font-weight: 300;
+    top: 17px;
+    right: 13px;
+    line-height: 40px;
+    font-size: 3rem;
+    color: #000;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.popup__title {
+    font-family: 'Bebas Neue';
+    margin-bottom: 28px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: $main-color;
+}
+
+.popup__form {
+    label {
+        position: relative;
+        margin-bottom: 24px;
+        display: block;
+        span {
+            position: absolute;
+            left: 3px;
+            top: 4px;
+            font-weight: 250;
+            font-size: 12px;
+            line-height: 12px;
+            color: #4C5350;
+        }
+        textarea {
+            border-radius: 4px 4px 0px 0px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+            width: 100%;
+            background: #F0F3F8;
+            outline: none;
+            padding: 7px 10px;
+            resize: none;
+            height: 85px;
+            &:focus {
+                background: #fff;
+            }
+        }
+        >.popup__text {
+            top: -50px;
+        }
+        label.error {
+            margin-top: 5px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: #FF0000;
+        }
+        input.error {
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 4px 4px 0px 0px;
+            
+        }
+        input.valid {
+            background-color: rgba(29, 194, 75, 0.1);
+            border-radius: 4px 4px 0px 0px;
+        }
+    }
+    input {
+        background: #F0F3F8;
+        padding: 7px 10px;
+        width: 100%;
+        
+        border-radius: 4px 4px 0px 0px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+        height: 37px;
+
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.65);
+        outline: none;
+        &:focus {
+            background: #fff;
+        }
+        
+    }
+    .popup__phone {
+        padding-left: 80px;
+        &:focus {
+            background-color: #fff;
+        }
+    }
+    .popup__btn {
+        margin: 40px auto 0;
+        display: block;
+        width: 330px;
+    }
+
+    // ==============================
+
+    .popup__label {
+        position: relative;
+        background-color: #F0F3F8;
+        height: 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+    }
+    
+    .select {
+        position: absolute; 
+        left: 0;
+        right: 0;
+    }
+    
+    .select__header {
+        position: inherit;
+        z-index: 1;
+        width: 40px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+    }
+    
+    .select__window {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        text-align: center;
+    }
+
+    .select__icon {
+        position: absolute;
+        z-index: 2;
+        top: 5px;
+        left: 45px;
+        cursor: pointer;
+    }
+
+    .select__icon img {
+        margin-top: 10px;
+        transition: all .3s;
+    }
+    
+    .select__item {
+        display: block;
+        padding: 7px 0;
+        cursor: pointer;
+    }
+    
+    .select__item img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .select__body {
+        position: relative;
+        z-index: 1;
+        height: 40px;
+    }
+
+    .popup-number {
+        padding-left: 70px;
+        background: #F0F3F8;
+        outline: none;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .select__body .popup-number:focus {
+        background-color: #fff;
+    }
+    
+    .popup .popup-number::-webkit-outer-spin-button,
+    .popup .popup-number::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+}

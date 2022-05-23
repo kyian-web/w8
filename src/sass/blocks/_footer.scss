@@ -1,0 +1,48 @@
+.footer {
+    background: $main-color;
+    &__wrapper {
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-social {
+        display: none;
+    }
+    &-top {
+        display: none;
+    }
+    
+    &_left {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        margin-right: 45px;
+    }
+    &__copyright {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #E3E6EB;
+    }
+
+    &-contact {
+        display: flex;
+        align-items: center;
+        column-gap: 35px;
+        &__item {
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            color: #F0F3F8;
+            text-decoration: none;
+        }
+    }
+    
+}

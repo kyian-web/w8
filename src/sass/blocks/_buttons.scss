@@ -1,0 +1,45 @@
+.btn_white {
+    border: 2px solid $main-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #fff;
+    height: 34px;
+    color: $main-color;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        background: #414141;
+        color: #FFFFFF;
+        border: 2px solid #414141;
+    } 
+    &:focus {
+        background: #fff;
+        color: #414141;
+        border: 2px solid #414141;
+    }
+}
+
+.btn_dark {
+    border: 2px solid $main-color;
+    background: $main-color;
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    height: 34px;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        background: #fff;
+        color: $main-color;
+        border: 2px solid $main-color;
+    } 
+    &:focus {
+        background: rgba(35, 35, 35, 0.8);
+        color: #fff;
+        border: 2px solid rgba(35, 35, 35, 0.8);
+    }
+}

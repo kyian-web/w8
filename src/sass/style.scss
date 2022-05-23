@@ -1,0 +1,61 @@
+@import 'base/var';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1500px;
+    // width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.h2_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    color: $main-color;
+}
+
+.section_descr {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 33px;
+    line-height: 38px;
+    color: $main-color;
+}
+
+.process-mobile {
+    display: none;
+}
+
+.choice-mobile {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/cars';
+@import 'blocks/info';
+@import 'blocks/process';
+@import 'blocks/choice';
+@import 'blocks/footer';
+@import 'blocks/modals';
+
+@import 'blocks/media';
